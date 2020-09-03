@@ -1,0 +1,3 @@
+[0903/141153.952:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0903/141154.018:ERROR:process_reader_win.cc(123)] NtOpenThread: Se ha especificado un identificador de cliente no válido. (0xc000000b)
+[0903/141154.018:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)

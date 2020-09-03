@@ -1,0 +1,36 @@
+#carousel {
+    position: relative;
+    z-index: 1;
+}
+
+#carousel img {
+    height: 400px;
+}
+
+#carousel  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: yellow;
+    font-size: 20px;
+    z-index: 2;
+}
+
+#carousel .overlay .texto1 {
+    height: 90px;
+    background-color: #19b2ee;
+    border-radius: 40px;
+    opacity: 70%;
+}
+
+#carousel .overlay .texto1 h1 {
+    font-size: 20px;
+}
+
+
+#carousel  .overlay .container,
+#carousel  .overlay .row {
+    height: 100%;
+}

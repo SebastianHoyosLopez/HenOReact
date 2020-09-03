@@ -1,0 +1,18 @@
+#footer {
+    background-color: rgb(26, 181, 243);
+}
+
+.redes-sociales {
+    height: 70px;
+    padding-top: 10px;
+    color: white;
+}
+
+.redes-sociales img {
+    height: 40px;
+}
+
+.enlace-redes strong {
+    color: white;
+    font-size: x-large;
+}
