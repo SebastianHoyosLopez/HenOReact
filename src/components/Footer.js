@@ -9,7 +9,7 @@ function Footer () {
                 <div className="container">
                     <div className="row redes-sociales">
                         <h4 className="col-4"></h4>
-                        <div className="col-6 enlace-redes">
+                        <div className="col-8 enlace-redes">
                             <a href="https://www.instagram.com/WifiOficial/">
                                 <img src="https://imgur.com/HwJhf3t.jpg" alt="instagram" />
                                 <strong>@wifioficial</strong>
