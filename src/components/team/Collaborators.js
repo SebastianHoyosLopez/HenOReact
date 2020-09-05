@@ -5,7 +5,7 @@ function Collaborators() {
   return (
     <div className="container" id="cards">
       <div className="row cards-collaborators">
-        <div className="card col-6 col-sm-6 my-3">
+        <div className="card col-12 col-sm-12 col-lg-6 my-3">
           <img
             src="https://i.imgur.com/p0Jy0aR.jpg"
             className="card-img-top px-5"
@@ -21,7 +21,7 @@ function Collaborators() {
             </a>
           </div>
         </div>
-        <div className="card col-6 col-sm-6 my-3">
+        <div className="card col-12 col-sm-12 col-lg-6 my-3">
           <img
             src="https://imgur.com/P270Ece.jpg"
             className="card-img-top px-5"
@@ -37,7 +37,7 @@ function Collaborators() {
             </a>
           </div>
         </div>
-        <div className="card col-6 col-sm-6 my-3">
+        <div className="card col-12 col-sm-12 col-lg-6 my-3">
           <img
             src="https://imgur.com/P270Ece.jpg"
             className="card-img-top px-5"
@@ -53,7 +53,7 @@ function Collaborators() {
             </a>
           </div>
         </div>
-        <div className="card col-6 col-sm-6 my-3">
+        <div className="card col-12 col-sm-12 col-lg-6 my-3">
           <img
             src="https://i.imgur.com/p0Jy0aR.jpg"
             className="card-img-top px-5"
