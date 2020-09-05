@@ -1,18 +1,22 @@
-import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import Info from './components/Info';
+import React from 'react'
+import Inicio from './pages/Inicio'
+import Team from './pages/Team'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <Main />
-        <Info />
-        <Footer />
+      <BrowserRouter>
+        <Navbar>
+          <Switch>
+            <Route exact path="/" component={Inicio} />
+            <Route exact path="/Equipo" component={Team} />
+          </Switch>
+        </Navbar>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
