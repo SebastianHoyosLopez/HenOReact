@@ -2,16 +2,14 @@ import React from 'react'
 import './styles/Header.css'
 import { Link } from 'react-router-dom'
 
-
-
 function Header() {
   return (
     <React.Fragment>
       <nav id="header" className="navbar navbar-expand navbar-dark sticky-top">
+      <Link className="navbar-brand" to="/">
+        <img src="https://imgur.com/egebpdp.jpg" alt="icono" />
+      </Link>
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            <img src="https://imgur.com/egebpdp.jpg" alt="icono" />
-          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -44,7 +42,6 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link text-platzi"
-                  href="#"
                   data-toggle="modal"
                   data-target="#modalCompra"
                 >

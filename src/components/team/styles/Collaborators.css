@@ -1,5 +1,8 @@
 
 #cards .cards-collaborators .card img {
-    height: 300px;
-    border-radius: 180px;
+    height: auto;
+    width: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 50px;
 }

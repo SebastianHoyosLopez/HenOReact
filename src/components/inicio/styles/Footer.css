@@ -12,6 +12,10 @@
     height: 40px;
 }
 
+.enlace-redes {
+  text-align: center;
+}
+
 .enlace-redes strong {
     color: white;
     font-size: x-large;
