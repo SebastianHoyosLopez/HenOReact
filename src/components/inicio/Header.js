@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <React.Fragment>
-      <nav id="header" className="navbar navbar-expand navbar-dark sticky-top">
+      <nav id="header" className="navbar navbar-expand navbar-light sticky-top">
       <Link className="navbar-brand" to="/">
         <img src="https://imgur.com/egebpdp.jpg" alt="icono" />
       </Link>
@@ -22,7 +22,7 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbar">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/Equipo">
@@ -30,9 +30,9 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/Servicios">
                   Servicios
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">

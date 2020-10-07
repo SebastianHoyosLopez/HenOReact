@@ -17,7 +17,7 @@ function CollaboratorV() {
           data-target="#Luis"
           onClick={() => abrirCerrar()}
         >
-          Contáctanos
+          Artes Visuales
         </Button>
       </div>
       <Modal show={modal} className="modal fade" id="Luis">

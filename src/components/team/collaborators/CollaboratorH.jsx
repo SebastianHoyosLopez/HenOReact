@@ -17,7 +17,7 @@ function CollaboratorH() {
         data-target="#Luis"
         onClick={() => abrirCerrar()}
       >
-        Contáctanos
+        CEO
       </Button>
       </div>
       <Modal show={modal} className="modal fade" id="Luis">

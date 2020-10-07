@@ -10,7 +10,7 @@
 }
 
 #header img {
-    height: 60px;
+    height: 45px;
 }
 
 #header h2 {
@@ -24,7 +24,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#navbar a {
+#navbarSupportedContent a {
     color: white;
     font-size: medium;
 }

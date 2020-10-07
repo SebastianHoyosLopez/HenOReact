@@ -16,7 +16,7 @@ function CollaboratorL() {
         data-toggle="modal"
         data-target="#Luis"
         onClick={() => abrirCerrar()}
-      > Contáctanos
+      > Cerebro Digital
       </Button>
         </div>
       <Modal show={modal} className="modal fade" id="Luis">

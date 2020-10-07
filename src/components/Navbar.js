@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from './inicio/Header'
-import Footer from './inicio/Footer'
+import React from "react";
+import Header from "./inicio/Header";
+import Footer from "./inicio/Footer";
 
 function Navbar(props) {
   return (
@@ -9,7 +9,7 @@ function Navbar(props) {
       {props.children}
       <Footer />
     </React.Fragment>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
