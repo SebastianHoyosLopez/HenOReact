@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import React, { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
 
 function CollaboratorV() {
-  const [modal, setmodal] = useState(false)
+  const [modal, setmodal] = useState(false);
 
   const abrirCerrar = () => {
-    setmodal(!modal)
-  }
+    setmodal(!modal);
+  };
 
   return (
     <div>
@@ -21,7 +21,17 @@ function CollaboratorV() {
         </Button>
       </div>
       <Modal show={modal} className="modal fade" id="Luis">
-        <Modal.Header>Victor Orlando</Modal.Header>
+        <Modal.Header>
+          Victor Orlando
+          <button
+            type="button"
+            className="close"
+            aria-label="Close"
+            onClick={() => abrirCerrar()}
+          >
+            X
+          </button>
+        </Modal.Header>
         <Modal.Body>
           Diseñador Gráfico y Productor Audiovisual independiente, nacido en la
           ciudad de Medellín. 12 años de experiencia en el campo de la
@@ -34,6 +44,6 @@ function CollaboratorV() {
         </Modal.Footer>
       </Modal>
     </div>
-  )
+  );
 }
-export default CollaboratorV
+export default CollaboratorV;

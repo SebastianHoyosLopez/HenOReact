@@ -1,27 +1,30 @@
-import React, { useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import React, { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
 
 function CollaboratorH() {
-  const [modal, setmodal] = useState(false)
+  const [modal, setmodal] = useState(false);
 
   const abrirCerrar = () => {
-    setmodal(!modal)
-  }
+    setmodal(!modal);
+  };
 
   return (
     <div>
       <div className="text-center">
-      <Button
-        className="btn btn-primary buttonn btn-sx"
-        data-toggle="modal"
-        data-target="#Luis"
-        onClick={() => abrirCerrar()}
-      >
-        CEO
-      </Button>
+        <Button
+          className="btn btn-primary buttonn btn-sx"
+          data-toggle="modal"
+          data-target="#Luis"
+          onClick={() => abrirCerrar()}
+        >
+          CEO
+        </Button>
       </div>
       <Modal show={modal} className="modal fade" id="Luis">
-        <Modal.Header>Henry Orozco</Modal.Header>
+        <Modal.Header>
+          Henry Orozco
+          <button type="button" className="close" aria-label="Close" onClick={() => abrirCerrar()}>X</button>
+        </Modal.Header>
         <Modal.Body>
           Periodista y creador digital. Viajero, melómano y lector. Un dibujante
           de voces humanas.
@@ -33,6 +36,6 @@ function CollaboratorH() {
         </Modal.Footer>
       </Modal>
     </div>
-  )
+  );
 }
-export default CollaboratorH
+export default CollaboratorH;

@@ -1,59 +1,27 @@
-import React from 'react'
-import './styles/Header.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./styles/Header.css";
+import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 
 function Header() {
   return (
-    <React.Fragment>
-      <nav id="header" className="navbar navbar-expand navbar-light sticky-top">
-      <Link className="navbar-brand" to="/">
-        <img src="https://imgur.com/egebpdp.jpg" alt="icono" />
-      </Link>
-        <div className="container">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/Equipo">
-                  Equipo
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Servicios">
-                  Servicios
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Marcas
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-platzi"
-                  data-toggle="modal"
-                  data-target="#modalCompra"
-                >
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </React.Fragment>
-  )
+    <>
+      <Navbar id="header" collapseOnSelect expand="lg" fixed="top" className="pb-0">
+        <Link className="logo" to="/">
+          <img src="https://imgur.com/egebpdp.jpg" alt="logo WiFi" />
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="Nav" >
+          <Nav className="main ml-auto">
+            <Nav.Link className="selection" href="/Equipo">Equipo</Nav.Link>
+            <Nav.Link className="selection" href="/Servicios">Servicios</Nav.Link>
+            <Nav.Link className="selection">Marcas</Nav.Link>
+            <Nav.Link className="selection">Contacto</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </>
+  );
 }
 
-export default Header
+export default Header;

@@ -1,5 +1,5 @@
-import React from 'react'
-import './styles/Main.css'
+import React from "react";
+import "./styles/Main.css";
 
 function Main() {
   return (
@@ -23,7 +23,7 @@ function Main() {
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-12 text-center texto1">
-                    <h1>Wifi 3.0 Oficial</h1>
+                    <h1>Wifi Oficial</h1>
                     Somos arte, vida, ideas, magia creatividad:
                     <br />
                     <strong>Somos Wifi Oficial</strong>
@@ -35,7 +35,7 @@ function Main() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

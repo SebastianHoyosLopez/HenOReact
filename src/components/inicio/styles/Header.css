@@ -1,30 +1,16 @@
 #header {
-    background: rgb(26, 181, 243);
-    height: 50px;
-    padding-top: 0%;
-    margin-top: 0%;
+  background: rgb(26, 181, 243);
 }
 
-#header button span {
-    height: 20px;
+#header #Nav .ml-auto #Nav.Link {
+  color: white;
 }
 
-#header img {
-    height: 45px;
+.logo img {
+  height: 45px;
 }
 
-#header h2 {
-    color: rgb(250, 250, 21);
-    font-weight: bolder;
-    font-style: italic;
-    font-variant: small-caps;
+#Nav .main .selection {
+  color: white;
 }
 
-#navbar {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#navbarSupportedContent a {
-    color: white;
-    font-size: medium;
-}

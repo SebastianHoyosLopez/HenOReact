@@ -1,9 +1,10 @@
-import React from 'react'
-import Inicio from './pages/Inicio'
-import Team from './pages/Team'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Service from './pages/Service'
+import React from "react";
+import Inicio from "./pages/Inicio";
+import Team from "./pages/Team";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Service from "./pages/Service";
+import "./index.css";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         </Navbar>
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

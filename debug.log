@@ -14,3 +14,4 @@
 [0917/225347.380:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
 [0917/225347.380:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
 [0917/225347.380:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[1017/100959.647:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
