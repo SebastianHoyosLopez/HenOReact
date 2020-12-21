@@ -6,7 +6,6 @@ import { Navbar } from 'react-bootstrap'
 function inicio() {
   return (
     <React.Fragment>
-      <Navbar/>
       <Main />
       <Info />
     </React.Fragment>
