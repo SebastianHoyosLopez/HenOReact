@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/HenOReact/precache-manifest.ddc4066b02712daaff38515ba5cf3c98.js"
+  "/HenOReact/precache-manifest.dd5ce77be6cc57555cae69de1fd4c2d9.js"
 );
 
 self.addEventListener('message', (event) => {
