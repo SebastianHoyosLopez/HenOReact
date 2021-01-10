@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
-function CollaboratorH() {
+function CollaboratorH(props) {
   const [modal, setmodal] = useState(false);
 
   const abrirCerrar = () => {
@@ -17,17 +17,16 @@ function CollaboratorH() {
           data-target="#Luis"
           onClick={() => abrirCerrar()}
         >
-          CEO
+          {props.job}
         </Button>
       </div>
       <Modal show={modal} className="modal fade" id="Luis">
         <Modal.Header>
-          Henry Orozco
+          {props.nameMember}
           <button type="button" className="close" aria-label="Close" onClick={() => abrirCerrar()}>X</button>
         </Modal.Header>
         <Modal.Body>
-          Periodista y creador digital. Viajero, melómano y lector. Un dibujante
-          de voces humanas.
+          {props.description}
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn btn-primary" onClick={() => abrirCerrar()}>
