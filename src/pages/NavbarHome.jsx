@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/NavbarHome.css";
 import { Link } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavLink } from "react-bootstrap";
 
 function NavbarHome() {
   return (
@@ -12,24 +12,26 @@ function NavbarHome() {
       expand="lg"
       className="pb-0"
     >
-      <Link className="logo" to="/">
-        <img src="https://imgur.com/egebpdp.jpg" alt="logo WiFi" />
-      </Link>
+      <Navbar.Brand>
+        <Link className="logo" to="/" exact>
+          <img src="https://imgur.com/egebpdp.jpg" alt="logo WiFi" />
+        </Link>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="Nav">
         <Nav className="main ml-auto">
-          <Nav.Link className="selection" href="/Equipo">
+          <NavLink className="selection" to="/Equipo">
             Equipo
-          </Nav.Link>
-          <Nav.Link className="selection" href="/Servicios">
+          </NavLink>
+          <NavLink className="selection" to="/Servicios">
             Servicios
-          </Nav.Link>
-          <Nav.Link className="selection" href="/marcas">
+          </NavLink>
+          <NavLink className="selection" to="/marcas">
             Marcas
-          </Nav.Link>
-          <Nav.Link className="selection" href="contacto">
+          </NavLink>
+          <NavLink className="selection" to="contacto">
             Contacto
-          </Nav.Link>
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
