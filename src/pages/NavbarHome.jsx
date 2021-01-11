@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/NavbarHome.css";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, NavLink } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 
 function NavbarHome() {
   return (
@@ -20,16 +20,16 @@ function NavbarHome() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="Nav">
         <Nav className="main ml-auto">
-          <NavLink className="selection" to="/Equipo">
+          <NavLink className="btn mr-2 selection" to="/Equipo">
             Equipo
           </NavLink>
-          <NavLink className="selection" to="/Servicios">
+          <NavLink className="btn mr-2 selection" to="/Servicios">
             Servicios
           </NavLink>
-          <NavLink className="selection" to="/marcas">
+          <NavLink className="btn mr-2 selection" to="/marcas">
             Marcas
           </NavLink>
-          <NavLink className="selection" to="contacto">
+          <NavLink className="btn mr-2 selection" to="contacto">
             Contacto
           </NavLink>
         </Nav>
