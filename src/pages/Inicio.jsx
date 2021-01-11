@@ -1,14 +1,99 @@
-import React from 'react'
-import Main from '../components/inicio/Main'
-import Info from '../components/inicio/Info'
+import React from "react";
+import Main from "../components/inicio/Main";
+import Info from "../components/inicio/Info";
 
 function inicio() {
   return (
-    <React.Fragment>
+    <>
       <Main />
-      <Info />
-    </React.Fragment>
-  )
+      <div className="row mt-5 justify-content-center">
+        <div className="col-lg-3">
+          <div className="card">
+            <img
+              src="https://imgur.com/uCe8aKb.jpg"
+              className="card-img-top"
+              alt="foto"
+            />
+          </div>
+
+          <h2>Heading</h2>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+            cursus magna.
+          </p>
+          <p>
+            <a className="btn btn-secondary" href="#" role="button">
+              View details &raquo;
+            </a>
+          </p>
+        </div>
+        <div className="col-lg-3">
+          <svg
+            className="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+            <text x="50%" y="50%" fill="#777" dy=".3em">
+              140x140
+            </text>
+          </svg>
+
+          <h2>Heading</h2>
+          <p>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+            eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
+            amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
+            mauris condimentum nibh.
+          </p>
+          <p>
+            <a className="btn btn-secondary" href="#" role="button">
+              View details &raquo;
+            </a>
+          </p>
+        </div>
+        <div className="col-lg-3">
+          <svg
+            className="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+            <text x="50%" y="50%" fill="#777" dy=".3em">
+              140x140
+            </text>
+          </svg>
+
+          <h2>Heading</h2>
+          <p>
+            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus.
+          </p>
+          <p>
+            <a className="btn btn-secondary" href="#" role="button">
+              View details &raquo;
+            </a>
+          </p>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default inicio
+export default inicio;
