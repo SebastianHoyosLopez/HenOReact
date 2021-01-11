@@ -2,7 +2,7 @@ import React from "react";
 
 function Alert() {
   return (
-    <div className="mt-5">
+    <div>
       <div className="alert alert-primary text-center " role="alert">
         <h4 class="alert-heading">Muy Pronto!</h4>
         <p>Pendientes de nuestras redes sociales.</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./inicio/styles/NavbarHome.css";
+import "./styles/NavbarHome.css";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 

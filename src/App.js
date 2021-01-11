@@ -1,11 +1,11 @@
 import React from "react";
-import Inicio from "./pages/Inicio";
-import Team from "./pages/Team";
+import Inicio from "./pages/Inicio.jsx";
+import Team from "./pages/Team.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Service from "./pages/Service";
 import "./index.css";
-import Footer from "./components/inicio/Footer";
-import NavbarHome from "./components/NavbarHome.jsx";
+import Footer from "./pages/Footer.jsx";
+import NavbarHome from "./pages/NavbarHome.jsx";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <h1>Contacto</h1>
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

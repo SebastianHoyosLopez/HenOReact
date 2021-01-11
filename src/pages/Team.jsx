@@ -1,7 +1,7 @@
 import React from "react";
-import Alert from "../components/team/Alert";
+import Alert from "../components/team/Alert.jsx";
 import "./styles/Team.css";
-import CollaboratorH from "../components/team/collaborators/CollaboratorH";
+import CollaboratorH from "../components/team/CollaboratorH";
 
 function Team() {
   const groupOfMembers = {
