@@ -14,15 +14,16 @@ function Main() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
+                style={{objectFit:"cover"}}
                 className="d-block w-100"
-                src="https://imgur.com/hZzmlvi.jpg"
+                src="https://imgur.com/ioNzmXW.jpg"
                 alt="Presentaci"
               />
             </div>
             <div className="overlay">
               <div className="container">
                 <div className="row align-items-center">
-                  <div className="col-md-12 text-center texto1">
+                  <div style={{color: "yellow"}} className="col-md-12 text-center texto1">
                     <h1>Wifi Oficial</h1>
                     Somos arte, vida, ideas, magia creatividad:
                     <br />

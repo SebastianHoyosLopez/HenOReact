@@ -1,95 +1,46 @@
 import React from "react";
 import Main from "../components/inicio/Main";
-import Info from "../components/inicio/Info";
+import Presentacion from "../components/inicio/Presentacion.jsx";
 
 function inicio() {
+  const presentacion = {
+    ceo: {
+      title: "CEO",
+      description:
+        "Henry Orozco, comunicador social con amplia trayectoria en el manejo de las comunicaciones y un talento muy apropiado para    el mundo actual y los influencer, escritor y apasionado por la música, es nuestro CEO que nos trae una propuesta innovadora en los medios virtuales.",
+      img: "https://imgur.com/U55bgcS.jpg",
+    },
+    servicios: {
+      title: "Estudios de tu marca",
+      description:
+        "Los estudios de marca permiten conocer los valores asociados por el consumidor a una marca y su peso en la construcción de la imagen de marca actual. Con ellos, se pueden establecer sus factores de atracción y lo que hace que esa marca sea diferente a otras.",
+      img: "https://imgur.com/L4Ohmog.jpg",
+    },
+    marketing : {
+      title: "Marketing",
+      description: "Cada vez toman más fuerza los influencers a la hora de planificar una estrategia de marketing digital: ¿Son esenciales? ¿Cómo debemos trabajar con ellos?, Te asesoramos.",
+      img: "https://imgur.com/egebpdp.jpg",
+    }
+  };
+
+  const presentacionCeo = presentacion.ceo;
+  const servicios = presentacion.servicios;
+  const marketing = presentacion.marketing;
+
   return (
     <>
       <Main />
-      <div className="row mt-5 justify-content-center">
-        <div className="col-lg-3">
-          <div className="card">
-            <img
-              src="https://imgur.com/uCe8aKb.jpg"
-              className="card-img-top"
-              alt="foto"
-            />
+      <div className="container">
+        <div className="row justify-content-center">
+        <div className="col-lg-4">
+            <Presentacion presentacion={marketing} />
           </div>
-
-          <h2>Heading</h2>
-          <p>
-            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
-            risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-            cursus magna.
-          </p>
-          <p>
-            <a className="btn btn-secondary" href="#" role="button">
-              View details &raquo;
-            </a>
-          </p>
-        </div>
-        <div className="col-lg-3">
-          <svg
-            className="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-            eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-            amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-            mauris condimentum nibh.
-          </p>
-          <p>
-            <a className="btn btn-secondary" href="#" role="button">
-              View details &raquo;
-            </a>
-          </p>
-        </div>
-        <div className="col-lg-3">
-          <svg
-            className="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>
-            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-            nibh, ut fermentum massa justo sit amet risus.
-          </p>
-          <p>
-            <a className="btn btn-secondary" href="#" role="button">
-              View details &raquo;
-            </a>
-          </p>
+          <div className="col-lg-4">
+            <Presentacion presentacion={presentacionCeo} />
+          </div>
+          <div className="col-lg-4">
+            <Presentacion presentacion={servicios} />
+          </div>
         </div>
       </div>
     </>

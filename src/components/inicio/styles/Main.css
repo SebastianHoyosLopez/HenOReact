@@ -20,10 +20,10 @@
 
 #carousel .overlay .texto1 {
     height: 90px;
-    background-color: rgb(255, 208, 0);
+    background-color: rgb(17, 16, 9);
     border-radius: 40px;
-    opacity: 70%;;
-}
+    opacity: 50%;;
+}   
 
 #carousel .overlay .texto1 h1 {
     font-size: 20px;
