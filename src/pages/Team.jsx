@@ -26,7 +26,7 @@ function Team() {
       job: "Artes Visuales",
     },
     leidy: {
-      name: "Leidy Vargas Orozco",
+      name: "Leidy V. Orozco",
       description:
         "Tecnóloga en Gestión de Mercados SENA Con 3 años de experiencia certificada en el área comercial y 1 año en el área administrativa. Eterna aprendiz, escritora por hobbie, estudiando informalmente inglés. Mujer, hija, madre, bruja Influencer en formación",
       img: "https://imgur.com/kaOufsF.jpg",
