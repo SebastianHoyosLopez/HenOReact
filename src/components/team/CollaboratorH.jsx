@@ -10,15 +10,15 @@ function CollaboratorH(props) {
 
   return (
     <div>
-      <div className="text-center">
-        <Button
-          className="btn btn-primary buttonn btn-sx"
+      <div className="text-center d-grid gap-2">
+        <button
+          className="btn btn-outline-primary btn-sm"
           data-toggle="modal"
           data-target="#Luis"
           onClick={() => abrirCerrar()}
         >
           {props.job}
-        </Button>
+        </button>
       </div>
       <Modal show={modal} className="modal fade" id="Luis">
         <Modal.Header>
