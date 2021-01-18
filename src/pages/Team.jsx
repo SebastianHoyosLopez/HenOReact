@@ -1,7 +1,6 @@
 import React from "react";
 import Alert from "../components/team/Alert.jsx";
-import "./styles/Team.css";
-import CollaboratorH from "../components/team/CollaboratorH";
+import Profile from "../components/team/Profile.jsx";
 
 function Team() {
   const groupOfMembers = {
@@ -13,7 +12,7 @@ function Team() {
       job: "CEO",
     },
     luis: {
-      name: "Luis Fernando Montoya",
+      name: "Luis F. Montoya",
       description:
         "Ingeniero de Sistemas e Informática especialista en desarrollo web con más 10 años de experiencia.",
       img: "https://imgur.com/gDoa4Ug.jpg",
@@ -56,57 +55,41 @@ function Team() {
   const leidyJob = groupOfMembers.leidy.job;
 
   return (
-    <div className="Team">
+    <div>
       <Alert />
-      <div className="container" id="cards">
-        <div className="row cards-collaborators">
-          <div className="card col-6 col-md-6 col-lg-3 my-1 mt-2">
-            <img src={henryImg} className="card-img-top mx-3 my-3" alt="foto" />
-            <div className="card-body">
-              <h5 className="card-title text-center">{henryName}</h5>
-              <CollaboratorH
-                nameMember={henryName}
-                description={henryDescription}
-                job={henryJob}
-              />
-            </div>
-          </div>
-          <div className="card col-6 col-md-6 col-lg-3 my-1 mt-2">
-            <img src={luisImg} className="card-img-top mx-3 my-3" alt="foto" />
-            <div className="card-body">
-              <h5 className="card-title text-center">{luisName}</h5>
-              <CollaboratorH
-                nameMember={luisName}
-                description={luisDescription}
-                job={luisJob}
-              />
-            </div>
-          </div>
-          <div className="card col-6 col-md-6 col-lg-3 my-1 mt-2">
-            <img
-              src={victorImg}
-              className="card-img-top mx-3 my-3"
-              alt="foto"
+      <div className="container">
+        <div className="row">
+          <div className="col-6 col-sm-6 col-lg-3">
+            <Profile
+              img={henryImg}
+              name={henryName}
+              job={henryJob}
+              description={henryDescription}
             />
-            <div className="card-body">
-              <h5 className="card-title text-center">{victorName}</h5>
-              <CollaboratorH
-                nameMember={victorName}
-                description={victorDescription}
-                job={victorJob}
-              />
-            </div>
           </div>
-          <div className="card col-6 col-md-6 col-lg-3 my-1 mt-2">
-            <img src={leidyImg} className="card-img-top mx-3 my-3" alt="foto" />
-            <div className="card-body">
-              <h5 className="card-title text-center">{leidyName}</h5>
-              <CollaboratorH
-                nameMember={leidyName}
-                description={leidyDescription}
-                job={leidyJob}
-              />
-            </div>
+          <div className="col-6 col-sm-6 col-lg-3">
+            <Profile
+              img={luisImg}
+              name={luisName}
+              job={luisJob}
+              description={luisDescription}
+            />
+          </div>
+          <div className="col-6 col-sm-6 col-lg-3">
+            <Profile
+              img={victorImg}
+              name={victorName}
+              job={victorJob}
+              description={victorDescription}
+            />
+          </div>
+          <div className="col-6 col-sm-6 col-lg-3">
+            <Profile
+              img={leidyImg}
+              name={leidyName}
+              job={leidyJob}
+              description={leidyDescription}
+            />
           </div>
         </div>
       </div>

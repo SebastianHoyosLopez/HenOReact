@@ -1,10 +1,8 @@
-.Team {
-    background-color: rgb(2, 183, 255);
-}
-#cards .cards-collaborators .card img {
+
+.container .row .card img {
     height: auto;
     width: auto;
-    max-height: 200px;
+    max-height: 250px;
     object-fit: cover;
-    border-radius: 200px;
 }
+

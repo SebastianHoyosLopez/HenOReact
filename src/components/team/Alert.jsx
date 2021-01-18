@@ -3,7 +3,7 @@ import React from "react";
 function Alert() {
   return (
     <div>
-      <div className="alert alert-primary text-center " role="alert">
+      <div className="alert alert-primary text-center " role="alert" style={{height:"220px"}}>
         <h4 class="alert-heading">Muy Pronto!</h4>
         <p>Pendientes de nuestras redes sociales.</p>
         <hr />
