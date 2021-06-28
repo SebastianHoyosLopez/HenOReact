@@ -1,6 +1,8 @@
 import React from "react";
 import Main from "../components/inicio/Main";
 import Presentacion from "../components/inicio/Presentacion.jsx";
+import Header from "../components/team/Header"
+
 
 function inicio() {
   const presentacion = {
@@ -29,19 +31,19 @@ function inicio() {
 
   return (
     <>
-      <Main />
       <div className="container">
         <div className="row justify-content-center">
-        <div className="col-lg-4">
-            <Presentacion presentacion={marketing} />
-          </div>
+          <Header/>
           <div className="col-lg-4">
-            <Presentacion presentacion={presentacionCeo} />
+              <Presentacion presentacion={marketing} />
+            </div>
+            <div className="col-lg-4">
+              <Presentacion presentacion={presentacionCeo} />
+            </div>
+            <div className="col-lg-4">
+              <Presentacion presentacion={servicios} />
+            </div>
           </div>
-          <div className="col-lg-4">
-            <Presentacion presentacion={servicios} />
-          </div>
-        </div>
       </div>
     </>
   );

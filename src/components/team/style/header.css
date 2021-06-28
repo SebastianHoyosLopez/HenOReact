@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+header {
+    background-color: yellow;
+}
+
+header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1000%;
+    text-shadow: 2px 2px black;
+    color: #6ec8ec;
+}
+
+header h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 700%;
+    line-height: 40%;
+    text-shadow: 3px 1px black;
+    color: #3EDBF0;
+}

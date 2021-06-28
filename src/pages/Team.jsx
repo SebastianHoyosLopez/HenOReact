@@ -1,5 +1,4 @@
 import React from "react";
-import Alert from "../components/team/Alert.jsx";
 import Profile from "../components/team/Profile.jsx";
 
 function Team() {
@@ -56,8 +55,7 @@ function Team() {
 
   return (
     <div>
-      <Alert />
-      <div className="container">
+      <div className="container mt-5">
         <div className="row">
           <div className="col-6 col-sm-6 col-lg-3">
             <Profile
